@@ -1,168 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Charity: Water Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity: Water Landing Page</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-  <style>
-    /* Base Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+ <style>
+  Base Reset
+  {margin: 0 ;padding: 0; box-sizing: border-box;}
 
-    html {
-      scroll-behavior: smooth;
-    }
+html {scroll-behavior: smooth}
 
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      background: #fdfdfd;
-      color: #333;
-    }
+body {font-family: 'Open Sans', sans-serif;
+line-height: 1.6;
+background: #fdfdfd;color: #333;}
 
-    h1, h2, h3 {
-      font-family: 'Poppins', sans-serif;
-    }
+>h1, h2, h3 {font-family: 'Poppins', sans-serif;}
 
-    /* HERO SECTION */
-    .hero {
-      background: url('https://via.placeholder.com/1400x600') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
+/* HERO SECTION */
+.hero {background: url('https://via.placeholder.com/1400x600') center/cover no-repeat;color: white;padding: 100px 20px;text-align: center;}
+.hero h1 {font-size: 2.5rem;margin-bottom: 20px;}
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
+.hero p {font-size: 1.2rem;margin-bottom: 30px;}
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
+.btn {display: inline-block;background: #0077cc;color: white;padding: 10px 20px;text-decoration: none;border-radius: 5px;font-weight: bold;transition: background 0.3s ease, transform 0.2s ease;}
 
-    .btn {
-      display: inline-block;
-      background: #0077cc;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
+.btn:hover {background: #005fa3;transform: scale(1.05);}
 
-    .btn:hover {
-      background: #005fa3;
-      transform: scale(1.05);
-    }
+.btn.secondary {background: #00aa88;}
 
-    .btn.secondary {
-      background: #00aa88;
-    }
+.btn.secondary:hover {
+background: #008f73;}
 
-    .btn.secondary:hover {
-      background: #008f73;
-    }
+/* SECTIONS 
+*/section {padding: 60px 20px;background: white;text-align: center;border-bottom: 1px solid #ddd:}
 
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-      background: white;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
+section h2 {font-size: 2rem;margin-bottom: 20px}
 
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+section p 
+font-size: 1rem;max-width: 700px;margin: 0 auto 20px;}
 
-    section p {
-      font-size: 1rem;
-      max-width: 700px;
-      margin: 0 auto 20px;
-    }
+.action-buttons {margin-top: 20px;}
 
-    .action-buttons {
-      margin-top: 20px;
-    }
+.action-buttons .btn {margin: 10px 10px;}
 
-    .action-buttons .btn {
-      margin: 10px 10px;
-    }
+/* FOOTER */.footer {background: #222;color: #fff;padding: 40px 20px;text-align: center;}
 
-    /* FOOTER */
-    .footer {
-      background: #222;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* RESPONSIVE */@media (min-width: 768px) {.hero h1 {font-size: 3rem;}
 
-    /* RESPONSIVE */
-    @media (min-width: 768px) {
-      .hero h1 {
-        font-size: 3rem;
-      }
+.hero p {font-size: 1.5rem;}
 
-      .hero p {
-        font-size: 1.5rem;
-      }
+section {padding: 80px 40px;}
 
-      section {
-        padding: 80px 40px;
-      }
-
-      .action-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-    }
-  </style>
+.action-buttons {display: flex;justify-content: center;
+gap: 20px;}}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>You Have the Power to Change Lives—One Drop at a Time</h1>
-      <p>Clean water changes everything. Join a movement of students bringing clean, safe water to communities in need.</p>
-      <a href="#donate" class="btn">Donate Your Coffee Money</a>
-    </div>
-  </header>
+<header class="hero">
+<div class="hero-content">
+<h1>You Have the Power to Change Lives—One Drop at a Time</h1>
+<p>Clean water changes everything. Join a movement of students bringing clean, safe water to communities in need.</p>
+<a href="#donate" class="btn">Donate Your Coffee Money</a>
+</div>
+</header>
 
-  <section id="donate" class="crisis">
-    <h2>The Crisis Made Real</h2>
-    <p>771 Million People Still Lack Access to Clean Water. That’s more than twice the population of the U.S.</p>
-    <p>But the solution is simple, and you can be a part of it. Imagine having to trek two miles for water.</p>
-  </section>
+<section id="donate" class="crisis">
+<h2>The Crisis Made Real</h2>
+<p>771 Million People Still Lack Access to Clean Water. That is more than twice the population of the U.S.</p>
+<p>But the solution is simple, and you can be a part of it. Imagine having to trek two miles for water.</p>
+</section>
 
-  <section id="fundraiser" class="students">
-    <h2>Why Students Matter</h2>
-    <p>College students have sparked real change — from hosting campus fundraisers to donating $5 a week, students like you have helped fund hundreds of water projects.</p>
-    <a href="#fundraiser" class="btn">Start a Campus Fundraiser</a>
-  </section>
+<section id="fundraiser" class="students">
+<h2>Why Students Matter</h2>
+<p>College students have sparked real change — from hosting campus fundraisers to donating $5 a week, students like you have helped fund hundreds of water projects.</p>
+<a href="#fundraiser" class="btn">Start a Campus Fundraiser</a>
+</section>
 
-  <section id="join" class="action">
-    <h2>Act Now</h2>
-    <p>Whether you donate $5 or rally your campus, you’re helping change the world — one drop at a time.</p>
-    <div class="action-buttons">
-      <a href="#donate" class="btn">Donate Your Coffee Money</a>
-      <a href="#join" class="btn secondary">Join the Movement</a>
-    </div>
-  </section>
+<section id="join" class="action">
+<h2>Act Now</h2>
+<p>Whether you donate $5 or rally your campus, you would be the helping change in the world — one drop at a time.</p>
+<div class="action-buttons">
+<a href="#donate" class="btn">Donate Your Coffee Money</a>
+<a href="#join" class="btn secondary">Join the Movement</a>
+</div>
+</section>
 
-  <footer class="footer">
-    <h3>Thank You</h3>
-    <p>Placidia Munezero | p0mune01@louisville.edu | +1 502 936 3262</p>
-  </footer>
-</body>
-</html>
+<footer class="footer">
+<h3>Thank You</h3>
+<p>Placidia Munezero | p0mune01@louisville.edu | +1 502 936 3262</p>
+
